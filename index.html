@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+     <title>Student app</title>
+</head>
+
+<body>
+
+     <Section id="bg">
+          <div class="form1">
+               <form id="myForm" action="##">
+                    <h1>My first student App</h1>
+
+
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
+
+                    <label for="fatherName">Father's Name</label><br>
+                    <input type="text" id="fatherName" placeholder="Enter your father name" required><br>
+
+                    <label for="class">Class</label><br>
+                    <input type="text" id="class" placeholder="class" required><br>
+
+                    <label for="age">Age</label><br>
+                    <input type="number" id="age" min="0" max="200" required><br>
+
+                    <label for="gender">Select gender</label>
+                    <select id="gender" name="gender" required>
+                         <option value="">--Select--</option>
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">Other</option>
+                    </select><br>
+
+                    <label for="totalMarks">Total marks</label><br>
+                    <input type="number" id="totalMarks" value="100" readonly><br>
+
+                    <label for="ObtainMarks">Obtain marks</label><br>
+                    <input type="number" id="ObtainMarks" min="0" max="100" placeholder="0" value="0"><br><br>
+
+                    <input type="submit" value="submit" id="btn">
+
+               </form>
+          </div>
+
+          <div class="table">
+
+               <label for="search" class="label">Search:</label>
+               <input type="text" id="search" name="search" placeholder="Search by name">
+               <form id="tabledata" action="">
+
+                    <table>
+                         <thead>
+                              <tr>
+                                   <th>No:</th>
+                                   <th>Name</th>
+                                   <th>Father Name</th>
+                                   <th>Class</th>
+                                   <th>Age</th>
+                                   <th>Gender</th>
+                                   <th>Total Marks</th>
+                                   <th>Obtain Marks</th>
+                                   <th>Pass/fail</th>
+
+
+                              </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                    </table>
+
+               </form>
+          </div>
+
+     </Section>
+     <!-- 
+     <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+          <span class="popuptext" id="myPopup">A Simple Popup!</span>
+     </div>
+     <script>
+          // When the user clicks on <div>, open the popup
+          function myFunction() {
+               var popup = document.getElementById("myPopup");
+               popup.classList.toggle("show");
+          }
+     </script> -->
+
+
+
+
+     <!-- The pop-up form -->
+
+     <div id="actionsCell"></div>
+     <div id="popup-container">
+          <div id="popup">
+               <form id="popup-form" action="##">
+                    <h1>My first student App</h1>
+
+
+                    <label for="popup-name">Name</label><br>
+                    <input type="text" id="popup-name" placeholder="Enter your name" required><br>
+
+                    <label for="popup-fatherName">Father's Name</label><br>
+                    <input type="text" id="popup-fatherName" placeholder="Enter your father name" required><br>
+
+                    <label for="popup-class">Class</label><br>
+                    <input type="text" id="popup-class" placeholder="class" required><br>
+
+                    <label for="popup-age">Age</label><br>
+                    <input type="number" id="popup-age" min="0" max="200" required><br>
+
+                    <label for="popup-gender">Select gender</label>
+                    <select id="popup-gender" name="popup-gender" required>
+                         <option value="">--Select--</option>
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">Other</option>
+                    </select><br>
+
+                    <label for="popup-totalMarks">Total marks</label><br>
+                    <input type="number" id="popup-totalMarks" value="100" readonly><br>
+
+                    <label for="popup-ObtainMarks">Obtain marks</label><br>
+                    <input type="number" id="popup-ObtainMarks" min="0" max="100" placeholder="0" value="0"><br><br>
+
+                    <input type="Cancel" value="Cancel" id="cancel-btn">
+                    <input type="save" value="save" id="save-btn">
+
+               </form>
+          </div>
+     </div>
+
+
+     <script src="app.js"></script>
+
+</body>
+
+</html>
